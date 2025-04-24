@@ -16,7 +16,7 @@ const NavigationMenu = () => {
         onClick={() => navigate('/navigator')}
       >
         <img src={Navigator} alt="Navigator" className="w-15 h-15 " />
-        <span className="text-xs mt-1 text-center">Navigator</span>
+        <span className="text-[10px] mt-1 text-center">Navigator</span>
       </div>
 
       <div
@@ -24,7 +24,7 @@ const NavigationMenu = () => {
         onClick={() => navigate('/lactation')}
       >
         <img src={LocationSpaces} alt="Lactation spaces" className="w-15 h-15 " />
-        <span className="text-xs mt-1 text-center">Lactation spaces</span>
+        <span className="text-[10px] mt-1 text-center">Lactation spaces</span>
       </div>
 
       <div
@@ -32,7 +32,7 @@ const NavigationMenu = () => {
         onClick={() => navigate('/period-kits')}
       >
         <img src={PeriotKits} alt="Period kits" className="w-15 h-15 " />
-        <span className="text-xs mt-1 text-center">Period kits</span>
+        <span className="text-[10px] mt-1 text-center">Period kits</span>
       </div>
 
       <div
@@ -40,7 +40,7 @@ const NavigationMenu = () => {
         onClick={() => navigate('/taxi')}
       >
         <img src={AyolTaxi} alt="Ayo'l taxi" className="w-15 h-15 " />
-        <span className="text-xs mt-1 text-center">Ayo'l taxi</span>
+        <span className="text-[10px] mt-1 text-center">Ayo'l taxi</span>
       </div>
 
     </div>

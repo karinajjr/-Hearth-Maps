@@ -29,7 +29,7 @@ export default function Layot() {
       </div>
 
 
-    <div className='mt-30'>
+    <div className='mt-20'>
     <EmergencyOptions />
     </div>
 
