@@ -9,7 +9,7 @@ const SOSButton = () => {
   };
 
   return (
-    <button onClick={handleSOS}  className=" my-8 w-50 h-50 rounded-full bg-blue-600 text-white text-4xl font-bold shadow-lg border-20 border-blue-200" >
+    <button onClick={handleSOS}  className=" my-8 w-60 h-60 rounded-full bg-blue-600 text-white text-4xl font-bold shadow-lg border-20 border-blue-200" >
       SOS
     </button>
   );
