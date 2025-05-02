@@ -1,48 +1,49 @@
-import React from 'react';
-import SOSButton from './SOSButton';
-import EmergencyOptions from './EmergencyOptions';
-import NavigationMenu from './NavigationMenu';
-import Sosimg from '../../public/Sos.png'
+import React from 'react'
+import AyolTaxi from "../../public/AyolTaxi.png"
+import Location from "../../public/Location.png"
+import Navigator from "../../public/Navigator.png"
+import PeriotKids from "../../public/PeriotKids.png"
+import Sos from "../../public/Sos.png"
+import CompassNavigator from "../../public/CompassNavigator.png"
 
-export default function Layot() {
+function Layot() {
   return (
     <>
-      <div>
-        <p className='hidden sm:block text-red-700 flex justify-center text-center items-center font-bold mt-20 text-2xl'>Видно только в мабильном версии!</p>
-        <div className="h-screen bg-white flex flex-col  p-4 block md:hidden ">
-
-          <div className=" flex justify-between ">
-
-            <div>
-              <h1 className='text-black font-medium text-xl'>Hearth</h1>
+      <div className='p-4'>
+        <nav >
+          <div className='flex justify-between'>
+            <h1 className='text-2xl'>Hearth</h1>
+            <i className="bi bi-list text-2xl"></i>
+          </div>
+        </nav>
+        <main>
+          <div>
+            <div className='flex mt-10 gap-3 items-center'>
+              <button><img src={AyolTaxi} alt="" className='mt-10' /></button>
+              <button><img src={Location} alt="" /></button>
+              <button><img src={PeriotKids} alt="" className='mt-5' /></button>
             </div>
-            <div className="border rounded-full px-2 py-1 ">
-              <i className="bi bi-person-fill"></i>
+
+            <div className='flex gap-2'>
+              <button><img src={Navigator} alt="" /></button>
+              <button><img src={Sos} alt="" className='mb-6' /></button>
             </div>
           </div>
 
-          <div className="flex justify-between items-center w-full mb-4 bg-[#0000000D] p-2 rounded-2xl mt-4">
-            <div className="text-left">
-              <h2 className="font-medium text-xl">Are you in an emergency?</h2>
-              <p className="text-sm text-gray-600 mt-2">Press the SOS button, your live location will be shared with the nearest help centre and your emergency contacts.</p>
-            </div>
-            <div>
-              <img src={Sosimg} className='w-100' alt="" />
-            </div>
-
-          </div>
-          <div className='flex justify-center'>
-            <SOSButton />
+          <div className='flex justify-center items-center'>
+            <button className='mt-6 rounded-2xl flex bg-[#EFEFF0] w-full items-center justify-around py-4 gap-10'>
+              <img src={CompassNavigator} className='w-5' alt="" />
+              <h1>Where to?</h1> 
+              <i className="bi bi-chevron-right"></i>
+              </button>
           </div>
 
 
-          <div className='mt-10'>
-            <EmergencyOptions />
-          </div>
 
-          <NavigationMenu />
-        </div>
+        </main>
       </div>
     </>
-  );
+  )
 }
+
+export default Layot
