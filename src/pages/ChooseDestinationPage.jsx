@@ -4,49 +4,65 @@ export default function ChooseDestinationPage() {
   const navigate = useNavigate()
 
   return (
-    <div className="p-4 bg-white h-screen flex flex-col gap-4">
-      {/* Верхняя панель */}
-      <div className="flex items-center gap-2">
-        <button onClick={() => navigate(-1)}>←</button>
-        <div className="text-lg font-medium border rounded-full px-4 py-2 w-full text-center">
-          Choose destination
+    <div className=" bg-white h-screen flex flex-col ">
+      <div className='p-4 space-y-2'>
+        <div className="flex items-center border rounded-xl px-4 py-2 gap-3  ">
+          <button onClick={() => navigate(-1)}><i class="bi bi-arrow-left text-2xl"></i></button>
+          <div className="text-lg font-normal ">
+            Choose destination
+          </div>
         </div>
+
+        <button onClick={() => navigate('/map')}
+          className="flex justify-between items-center p-3 border rounded-xl w-full"  >
+         <div className='flex gap-2'>
+         <i className="bi bi-geo-alt flex items-center "></i>
+          <div className="text-lg font-normal ">
+          Choose on map
+          </div>
+         </div>
+          <i class="bi bi-arrow-right text-2xl"></i>
+        </button>
+
       </div>
 
-      {/* Кнопка: выбрать на карте */}
-      <button
-        onClick={() => navigate('/map')}
-        className="flex items-center gap-2 p-3 border rounded-xl"
-      >
-        <span>🗺️</span>
-        <span>Choose on map</span>
-      </button>
 
       {/* Дом и Работа */}
-      <div className="space-y-3">
-        <div className="flex justify-between">
-          <span>🏠 Home</span>
-          <button className="text-blue-500">Add</button>
+      <div className=" border-t">
+        <div className="flex justify-between p-4">
+          <div className='flex gap-5'>
+          <i class="bi bi-house-door-fill text-2xl"></i>
+            <h1 className='flex items-center'>Home</h1>
+          </div>
+          <button className="mr-2">Add</button>
         </div>
-        <div className="flex justify-between">
-          <span>💼 Work</span>
-          <button className="text-blue-500">Add</button>
+
+        <hr class="border-t border-gray-300 mb-0 " />
+
+        <div className="flex justify-between p-4">
+          <div className='flex gap-5'>
+            <i className="bi bi-briefcase-fill text-2xl"></i>
+            <h1 className='flex items-center'>Work</h1>
+          </div>
+          <button className="mr-2">Add</button>
         </div>
-      </div>
+      </div >
+      <hr class="border-t mt-0" />
+
 
       {/* История */}
-      <div className="flex-1 overflow-y-auto">
-        <h2 className="text-lg font-medium mt-4 mb-2">History</h2>
+      <div className="flex-1 overflow-y-auto  space-y-1">
+        <h2 className="text-lg font-medium px-4 py-2">History</h2>
         {Array.from({ length: 10 }).map((_, i) => (
-          <div key={i} className="flex justify-between items-center border-b py-2">
-            <div className="flex items-center gap-2">
-              <span className="bg-black text-white w-6 h-6 flex items-center justify-center rounded-full text-xs">🕓</span>
+          <div key={i} className=' bg-[#EFEFF0] flex px-4 py-3 justify-between w-full items-center'>
+            <div className='flex gap-3 items-center'>
+              <i class="bi bi-clock-fill text-lg"></i>
               <div>
-                <p className="font-medium">School 2</p>
-                <p className="text-sm text-gray-500">Chilanzar, Tashkent</p>
+                <h1 className='text-lg'>School 2</h1>
+                <p className='text-[12px]'>Chilanzar, Tashkent</p>
               </div>
             </div>
-            <span className="text-sm text-gray-600">530 m</span>
+            <p>10 min</p>
           </div>
         ))}
       </div>
