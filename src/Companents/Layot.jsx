@@ -19,14 +19,14 @@ function Layot() {
         <main>
           <div>
             <div className='flex mt-10 gap-3 items-center'>
-              <button><img src={AyolTaxi} alt="" className='mt-10' /></button>
-              <button><img src={Location} alt="" /></button>
-              <button><img src={PeriotKids} alt="" className='mt-5' /></button>
+              <button><img src={AyolTaxi} alt="" className='mt-5 text-sm' />Ayol Taxi</button>
+              <button><img src={Location} alt="" />Lactation spaces</button>
+              <button><img src={PeriotKids} alt="" className='mt-5 text-[1px]' /><h1 className='text-[14px]'>Period kits delivery</h1></button>
             </div>
 
             <div className='flex gap-2'>
-              <button><img src={Navigator} alt="" /></button>
-              <button><img src={Sos} alt="" className='mb-6' /></button>
+              <button><img src={Navigator} alt="" className='' />Navigator</button>
+              <button><img src={Sos} alt="" className='' />SOS button</button>
             </div>
           </div>
 
