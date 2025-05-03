@@ -14,7 +14,7 @@ function Layot() {
 
   return (
     <>
-      <div className='p-4'>
+      <div className='px-9 py-4'>
         <nav >
           <div className='flex justify-between'>
             <h1 className='text-2xl'>Hearth</h1>
@@ -23,40 +23,40 @@ function Layot() {
         </nav>
         <main>
           <div>
-            <div className='flex mt-7 gap-3 items-center'>
+            <div className='flex mt-7 gap-3 items-center '>
               <button>
-                <img src={AyolTaxi} alt="" className='mt-5 text-sm' />
-                <h1 className='text-[13px]'>
+                <img src={AyolTaxi} alt="" className='mt-4 text-sm' />
+                <h1 className='text-[10px] ml-3 items-center'>
                   Ayol Taxi
                 </h1>
               </button>
 
-              <button>
+              <button className='mr-2'>
                 <img src={Location} alt="" />
-                <h1 className='text-[13px]'>
+                <h1 className='text-[10px]'>
                   Lactation spaces
                 </h1>
               </button>
 
-              <button>
-                <img src={PeriotKids} alt="" className='mt-5 ' />
-                <h1 className='text-[13px]'>
+              <button onClick={() => navigate('/period')} >
+                <img src={PeriotKids} alt="" className='mt-4 ' />
+                <h1 className='text-[10px]'>
                   Period kits delivery
                 </h1>
               </button>
             </div>
 
-            <div className='flex gap-2'>
+            <div className='flex gap-5 '>
               <button onClick={() => navigate('/navigator')}>
                 <img src={Navigator} alt="" className='' />
-                <h1 className='text-[13px]'>
+                <h1 className='text-[10px]'>
                   Navigator
                 </h1>
               </button>
 
               <button onClick={() => navigate('/sos')}>
                 <img src={Sos} alt="" className='mt-4' />
-                <h1 className='text-[13px]'>
+                <h1 className='text-[10px]'>
                   SOS button
                 </h1>
               </button>
@@ -72,8 +72,8 @@ function Layot() {
             </button>
           </div>
 
-          <div className=' mt-7 flex flex-col space-y-2'>
-            <div className=' bg-[#EFEFF0] flex px-4 py-3 justify-between w-full items-center'>
+          <div className=' mt-7 flex flex-col space-y-2 '>
+            <div className=' bg-[#EFEFF0] flex px-4 py-3 justify-between w-full items-center rounded-t-2xl'>
               <div className='flex gap-3 items-center'>
                 <i class="bi bi-clock-fill text-lg"></i>
                 <div>
@@ -95,7 +95,7 @@ function Layot() {
               <p>10 min</p>
             </div>
 
-            <div className=' bg-[#EFEFF0] flex px-4 py-3 justify-between w-full items-center'>
+            <div className=' bg-[#EFEFF0] flex px-4 py-3 justify-between w-full items-center rounded-b-2xl'>
               <div className='flex gap-3 items-center'>
                 <i class="bi bi-clock-fill text-lg"></i>
                 <div>
