@@ -25,14 +25,14 @@ function Layot() {
         <main>
           <div>
             <div className='flex mt-7 gap-3 items-center '>
-              <button>
+              <button onClick={() => navigate('/taxi')}>
                 <img src={AyolTaxi} alt="" className='mt-4 text-sm' />
                 <h1 className='text-[10px] ml-3 items-center'>
                   Ayol Taxi
                 </h1>
               </button>
 
-              <button className='mr-2'>
+              <button className='mr-2' onClick={() => navigate('/lactation')}>
                 <img src={Location} alt="" />
                 <h1 className='text-[10px]'>
                   Lactation spaces

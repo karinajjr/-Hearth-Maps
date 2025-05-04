@@ -5,11 +5,13 @@ import Layot from './Companents/Layot'
 import Navigator from './Companents/Navigator';
 import LactationSpaces from './Companents/LactationSpaces';
 import PeriodKits from './Companents/PeriodKits';
-import AyolTaxi from './pages/AyolTaxi';
+import AyolTaxi from './Companents/AyolTaxi';
 import ChooseDestinationPage from "./pages/ChooseDestinationPage"
 import MapPage from "./pages/MapPage"
 import SOSButton  from "./Companents/SOSButton"
 import Period from './pages/Period';
+import AyolTaxiLoc from './pages/AyolTaxiLoc';
+import AyolMap from './pages/AyolMap'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
       <Route path="/period" element={<PeriodKits />} />
       <Route path="/perio" element={<Period />} />
       <Route path="/taxi" element={<AyolTaxi />} />
+      <Route path="/Aloc" element={<AyolTaxiLoc />} />
+      <Route path="/AyolMap" element={<AyolMap />} />
     </Routes>
   </BrowserRouter>
     </>
