@@ -20,7 +20,7 @@ function LactationSpaces() {
     }));
   };
 
-  // Объект с изображениями для каждой категории
+
   const categoryImages = {
     mall: '/images/mall.jpg',
     coffee: '/images/coffee.jpg',
@@ -67,7 +67,7 @@ function LactationSpaces() {
           <div className='grid grid-cols-4 gap-2 mt-3'>
             {['mall', 'coffee', 'library', 'museum', 'park', 'restaurant', 'cafe', 'bazaar', 'other'].map((category) => (
               <div key={category} className="space-y-2">
-                {/* Button with text */}
+
                 <button
                   onClick={() => handleClick(category)}
                   className={`text-sm p-1 rounded-full px-2 ${
@@ -77,7 +77,6 @@ function LactationSpaces() {
                   {category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
 
-                {/* Button with image */}
                 <button
                   onClick={() => handleClick(category)}
                   className={`text-sm p-1 rounded-full px-2 ${
@@ -85,7 +84,7 @@ function LactationSpaces() {
                   }`}
                 >
                   <img
-                    src={categoryImages[category]} // Выбираем картинку для каждой кнопки
+                    src={categoryImages[category]} 
                     alt={category}
                     className="w-8 h-8 object-cover rounded-full"
                   />
