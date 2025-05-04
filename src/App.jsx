@@ -9,6 +9,7 @@ import AyolTaxi from './pages/AyolTaxi';
 import ChooseDestinationPage from "./pages/ChooseDestinationPage"
 import MapPage from "./pages/MapPage"
 import SOSButton  from "./Companents/SOSButton"
+import Period from './pages/Period';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/choose" element={<ChooseDestinationPage />} />
       <Route path="/lactation" element={<LactationSpaces />} />
       <Route path="/period" element={<PeriodKits />} />
+      <Route path="/perio" element={<Period />} />
       <Route path="/taxi" element={<AyolTaxi />} />
     </Routes>
   </BrowserRouter>
